@@ -3,9 +3,14 @@
   <title> Horses </title>
 </head>
 
+  <div class="topnav">
+  <a href="#home">Home</a>
+   <a class="active" href="#Noun Project">Noun Project</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
 
 <body>
-
  <h1> Horse </h1>
   <table>
   <tr> 
@@ -84,7 +89,26 @@
 </body>
 
 <style>
-
+.topnav {
+  overflow: hidden;
+  background-color: #373737;
+}
+.topnav a {
+ float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px
+}
+.topnav a:hover {
+  background-color: #e1e1e1;
+  color: #373737;
+}
+.topnav a.active {
+  background-color: #337ab7;
+}  
+  
 h1 {
   text-align: center;
 }
