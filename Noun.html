@@ -8,9 +8,13 @@
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
 </div>
-  
+    <br/><br/><br/><br/>
 <body>
 <h1> Horses </h1> 
+  <p class="description" style="margin:30px 10% 40px 10%">
+   The horse (Equus ferus caballus) has lived on Earth for over 50 million years. The domestication of horses began around 4000 BC. There are several populations of horses living in the wild, and some are domesticated. These domesticated populations are known as feral horses. Female horses are known as mares, while the male horses are called geldings, if they are casterated, or stallions. Foals reach adulthood at around 5 years of age and from there, live up to 25 to 30 in human years.
+    </p>
+  
  <h3> List of a few horse breeds </h3> 
  <table>
   <tr> 
@@ -75,68 +79,103 @@
      <li> Dun </li>
      <li> Gray </li>
      <li> Roan </li>
-     <li> Silver dapple </li>
-      
+     <li> Silver dapple </li>   
     </ul>
    </td>
    <td> 4.8 - 5.1 ft.</td>
   </tr> 
+</table>
   
-</table>     
+ <br/><br/>
+    <h4 style="margin:30px 10% 40px 10%">Horse coat colors in order: chestnut, dun, black, bay, gray, roan(blue), and palomino.</h4>
+  <div class="fling-minislide" style="margin:30px 10% 40px 10%">
+   <img src="https://www.dilutesaustralia.net/images/archi.jpg" alt="Slide 7" />
+   <img src="https://i.pinimg.com/originals/fb/c6/9b/fbc69b1a0d7b6d4b978a25e51f89dd96.jpg" alt="Slide 6" />
+   <img src="https://i.pinimg.com/originals/62/96/ca/6296caaf6c2954881bd4bfd71e7cf998.jpg" alt="Slide 5" />
+   <img src="https://cdn.hipwallpaper.com/i/54/24/UByAEX.jpg" alt="Slide 4" />
+   <img src="https://i.pinimg.com/originals/60/0d/50/600d500ee8e3040602cdcede75a01abd.jpg" alt="Slide 3" />
+   <img src="http://requiemstate.weebly.com/uploads/6/9/9/2/6992896/105962250.jpg?1303021917" alt="Slide 2" />
+   <img src="https://i.pinimg.com/originals/6b/63/28/6b63286d90e57071abd5a97212385ef5.jpg" alt="Slide 1" /> 
+    </div>
+ 
+    
   
-
 </body>
 
 <style>
- @import url(https://fonts.googleapis.com/css?family=Antic);
+@import url(https://fonts.googleapis.com/css?family=Antic);
 @import url(https://fonts.googleapis.com/css?family=Lora);
 
 /*navigation bar*/
 .topnav {
   overflow: hidden;
-  background-color: #373737;}
+  background-color: #000000;
+  width: 100%;
+  display:block;
+  margin:0;
+  padding:0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top:0;
+  z-index: 100;}
 .topnav a {
   float: left;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 16px;
   text-decoration: none;
   font-size: 17px;
   font-family: Antic;}
-.topnav a:hover {background-color: #e1e1e1;
-  color: #373737;}
-.topnav a.active {background-color: #337ab7;}
+.topnav a:hover {
+  color: #cab696;}
+.topnav a.active {color: #cab696;}
 
 /*table*/
 table, th, td {border: 3px solid lightgray;}
 table {
   width: 70%;
-  border-collapse: collapse;}
-
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;}
 img {width: 92%;}
 td img{display: block;
-    margin-left: auto;
-    margin-right: auto;}
+   margin-left: auto;
+   margin-right: auto;}
 
 td:nth-child(1) {width: 30%;
   background: #ebeaed;}
-td:nth-child(2) {width:20%;
-  background: #ebeaed;
-  text-align: center;}
+td:nth-child(2) {width:18%;
+  background: #ebeaed; text-align: center;}
 td:nth-child(3) {width: 35%;
   background: #ebeaed;}
-td:nth-child(4) {width: 15%;
-  background: #ebeaed;}
+td:nth-child(4) {width: 17%;
+  background: #ebeaed; text-indent: 10px;}
 
 /*text*/
 h1 {text-align: center; font-family: Lora;}
+h3 {text-align: center;}
 th {background: #79a8d1; 
-   border-color: #6988a3;
-   font-size: 14pt; font-family: lora;}
+   border-color: #749EC3;
+   font-size: 13pt; font-family: lora;}
 td {font-size: 12pt; font-family:antic;}
-
+h4 {font-family: antic;}
+.description{ font-family: antic; text-indent: 40px; }
+.slideshowdescription{font-family:antic;}
 body {background: #ebeaed;}
 
+/* Slideshow */
+.fling-minislide {width:350px; height:300px; overflow:hidden; position:relative;vertical-align: middle;}
+.fling-minislide img{ position:absolute; animation:fling-minislide 30s infinite; opacity:0; width: 100%; height: auto;}
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(7){animation-delay:0s;}
+.fling-minislide img:nth-child(6){animation-delay:4s;}
+.fling-minislide img:nth-child(5){animation-delay:8s;}
+.fling-minislide img:nth-child(4){animation-delay:12s;}
+.fling-minislide img:nth-child(3){animation-delay:16s;}
+.fling-minislide img:nth-child(2){animation-delay:20s;}
+.fling-minislide img:nth-child(1){animation-delay:24s;}
+  
 </style>
 
 
