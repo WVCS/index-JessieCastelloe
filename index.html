@@ -6,13 +6,20 @@
   <a href="#about">About</a>
 </div>
   
+  <div class="container">
+  <div class="square">
+  <div class="text-block">
+    <h4>Jessie Castelloe</h4>
+    <img class="personalartifact" src="Personal Artifact.jpg" alt="personalartifact">
+  </div>
+ </div>
+  
 <body>
  <h3> Jessie Castelloe </h3>  
   <p> This is 'paragraph text' </p>
   
     <a href="Noun.html"> Noun Project-Horse </a>
-    
-   <img src="Personal Artifact.jpg">  
+     
   
  </body>
   
@@ -23,24 +30,51 @@
      
 .topnav {
   overflow: hidden;
-  background-color: #373737;}
+  background-color: #000000;
+  width: 100%;
+  display:block;
+  margin:0;
+  padding:0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top:0;
+  z-index: 100;}
 .topnav a {
   float: left;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 16px;
   text-decoration: none;
   font-size: 17px;
   font-family: Antic;}
 .topnav a:hover {
-  background-color: #e1e1e1;
-  color: #373737;}
-.topnav a.active {background-color: #337ab7;}   
+  color: #cab696;}
+.topnav a.active {color: #cab696;}   
      
 body {background-color: #ebeaed;}
    a {text-decoration: none;}
    a:hover{background-color: #dab4f2;}
    img {width: 20%;}
+     
+     .text-block {
+  position: absolute;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;}
+.square {
+  height: 150px;
+  width: 100%;
+  background-color: #555;} 
+
+.personalartifact {
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  left: 220%;}
+
+h4 {
+  font-size: 20pt;}
      
 </style>
 
