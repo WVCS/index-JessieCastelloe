@@ -19,8 +19,9 @@
   
   <p style="margin:30px 10% 40px 10%"> This is 'paragraph text' </p><br/>
   
-  <div class="boxed"><img class="personalartifact" src="https://github.com/WVCS/index-JessieCastelloe/blob/main/Personal%20Artifact.jpg?raw=true">
-  <p class="about">This text is enclosed in a box.</p> </div>
+<div class="container">
+  <img class="PA" src="https://github.com/WVCS/index-JessieCastelloe/blob/main/Personal%20Artifact.jpg?raw=true">
+</div>
   
     </body>
   
@@ -80,14 +81,20 @@ body, html, h4 {
   color: white;
   font-family:Lora;}
     
-img{
-  float:left;
-  width: 25%;
-  height: auto;}
-.boxed {border: 1px solid white; background: white; height: 220px;}
-.about{display:block;
-  position: relative;
-  margin-left: 28%;}
+.container {position: relative;}
+.container::after {
+  text-indent: 30px;
+  content: "hello";
+  display: block;
+  position: absolute;
+  top: 0;
+  margin-left: 20%;
+  height: 100%;
+  width: 80%;
+  background:white}
+.PA {
+  display: block;
+  width: 20%;}
      
 </style>
 
