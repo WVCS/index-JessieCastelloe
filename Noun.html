@@ -87,8 +87,8 @@
 </table>
   
  <br/><br/>
-    <h4 style="margin:30px 10% 40px 10%">Horse coat colors in order: chestnut, dun, black, bay, gray, roan(blue), and palomino.</h4>
-  <div class="fling-minislide" style="margin:30px 10% 40px 10%">
+<div class="container">
+    <div class="fling-minislide" style="margin:30px 10% 40px 10%">
    <img src="https://www.dilutesaustralia.net/images/archi.jpg" alt="Slide 7" />
    <img src="https://i.pinimg.com/originals/fb/c6/9b/fbc69b1a0d7b6d4b978a25e51f89dd96.jpg" alt="Slide 6" />
    <img src="https://i.pinimg.com/originals/62/96/ca/6296caaf6c2954881bd4bfd71e7cf998.jpg" alt="Slide 5" />
@@ -97,6 +97,7 @@
    <img src="http://requiemstate.weebly.com/uploads/6/9/9/2/6992896/105962250.jpg?1303021917" alt="Slide 2" />
    <img src="https://i.pinimg.com/originals/6b/63/28/6b63286d90e57071abd5a97212385ef5.jpg" alt="Slide 1" /> 
     </div>
+</div>
  
     
   
@@ -164,8 +165,20 @@ h4 {font-family: antic;}
 .slideshowdescription{font-family:antic;}
 body {background: #ebeaed;}
 
+/* Slideshow text */
+.container {position: relative;}
+.container::after {
+  content: "Horse coat colors in order: chestnut, dun, black, bay, gray, roan(blue), and palomino.";
+  display: block;
+  position: absolute;
+  top: 0;
+  margin-left: 58%;
+  height: 85%;
+  width: 30%;
+  background:#ebeaed}
+  
 /* Slideshow */
-.fling-minislide {width:350px; height:300px; overflow:hidden; position:relative;vertical-align: middle;}
+.fling-minislide {width:350px; height:300px; overflow:hidden; position:relative;}
 .fling-minislide img{ position:absolute; animation:fling-minislide 30s infinite; opacity:0; width: 100%; height: auto;}
 @keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
 .fling-minislide img:nth-child(7){animation-delay:0s;}
