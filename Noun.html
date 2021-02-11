@@ -168,17 +168,17 @@ body {background: #ebeaed;}
 /* Slideshow text */
 .container {position: relative;}
 .container::after {
-  content: "Horse coat colors in order: chestnut, dun, black, bay, gray, roan(blue), and palomino.";
+  content: "Horse coat colors in order: chestnut, dun, black, bay, gray, roan (blue), and palomino.";
+  font-size:16pt;
   display: block;
   position: absolute;
   top: 0;
-  margin-left: 58%;
-  height: 85%;
-  width: 35%;
+  margin-left: 43%;
+  height: 55%;
+  width: 48%;
   background:#ebeaed}
-  
-/* Slideshow */
-.fling-minislide {width:350px; height:300px; overflow:hidden; position:relative;}
+/* ------ Slideshow ------*/
+.fling-minislide {width:30%; height:300px; overflow:hidden; position:relative;}
 .fling-minislide img{ position:absolute; animation:fling-minislide 30s infinite; opacity:0; width: 100%; height: auto;}
 @keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
 .fling-minislide img:nth-child(7){animation-delay:0s;}
