@@ -5,6 +5,8 @@
  
 <header> 
     <div class="topnav">
+      <div class="logo">
+<img src="https://leanfrontiers.com/wp-content/uploads/2018/12/logo-placeholder-png.png" width="130"/> </div>
   <a class="active" href="https://wvcs.github.io/index-JessieCastelloe/">Home</a>
   <a href="https://wvcs.github.io/index-JessieCastelloe/Noun.html">Noun Project</a>
   <a href="#contact">Contact</a>
@@ -13,28 +15,31 @@
   
 <html>
 <body>
-  <br/><br/>
-    <div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:25pt">Jessie Castelloe</h1> </div> </div>
-  
+  <br/><br/><br/><br/><br/>
+    <div class="headerimage">
+  <div class="headertext">
+    <h1 style="font-size:25pt">Jessie Castelloe</h1>
+  </div>
+</div>
+    
   <p style="margin:30px 10% 40px 10%"> This is 'paragraph text' </p><br/>
   
-<div class="container">
+  <div class="container">
   <img class="PA" src="https://github.com/WVCS/index-JessieCastelloe/blob/main/Personal%20Artifact.jpg?raw=true">
 </div>
   
-    </body>
+  </body>
   
   
  <!------------------------------------------------ STYLE START -------------------------------> 
    <style> 
 @import url(https://fonts.googleapis.com/css?family=Antic);
 @import url(https://fonts.googleapis.com/css?family=Lora);
-     
+ 
 .topnav {
+  text-align: right;
   overflow: hidden;
-  background-color: #272451;
+  background-color: #b7bbc9;
   width: 100%;
   display:block;
   margin:0;
@@ -45,20 +50,25 @@
   top:0;
   z-index: 100;}
 .topnav a {
-  float: left;
   color: white;
   text-align: center;
   padding: 20px 16px;
   text-decoration: none;
-  font-size: 17px;
-  font-family: Antic;}
+  font-size: 1.7vw;
+  font-family: Antic;
+  display:inline-block;
+  padding:2.3%;}
+.logo img{float:left;
+  width:90px;
+  padding:4px;
+  margin:2px;}
 .topnav a:hover {
-  color: #caaa96;}
-.topnav a.active {color: #caaa96;}   
+  color: #242947;}
+.topnav a.active {color: #242947;}   
      
-body {background-color: #ebeaed;}
+body {background: #ebeaed;}
    a {text-decoration: none;}
-   
+
 h4 {font-size: 20pt;}
 
 body, html, h4 {
@@ -66,22 +76,22 @@ body, html, h4 {
   margin: 0;
   font-family: antic;}
 
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("https://thumbs.dreamstime.com/t/blue-marble-texture-background-abstract-marble-texture-natural-patterns-design-blue-marble-texture-background-100311799.jpg");
+.headerimage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("https://us.123rf.com/450wm/panychev/panychev1704/panychev170400037/75666147-dark-blue-and-black-gradient-texture-background-abstract-surface-material.jpg?ver=6");
   height: 180px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;}
-.hero-text {
+.headertext {
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #acacac;
   font-family:Lora;}
-    
+
 .container {position: relative;}
 .container::after {
   text-indent: 30px;
@@ -89,13 +99,14 @@ body, html, h4 {
   display: block;
   position: absolute;
   top: 0;
-  margin-left: 30%;
+  margin-left: 20%;
   height: 100%;
   width: 80%;
   background:white}
+
 .PA {
   display: block;
-  width: 30%;}
+  width: 20%;}
      
 </style>
 
