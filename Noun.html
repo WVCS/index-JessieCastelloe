@@ -14,9 +14,10 @@
 </div> </header>
 <br/><br/><br/><br/>
 <html>
-  <body>
-<h1> Horses </h1> 
-  <p class="description" style="margin:30px 10% 40px 10%">
+ <body>
+   <div class="headerimage"></div> 
+  <h1 style="margin:110px 10% 10px 10%"> Horses  </h1> 
+  <p class="description" style="margin:10px 10% 40px 10%">
    The horse (Equus ferus caballus) has lived on Earth for over 50 million years. The domestication of horses began around 4000 BC. There are several populations of horses living in the wild, and some are domesticated. These domesticated populations are known as feral horses. Female horses are known as mares, while the male horses are called geldings, if they are casterated, or stallions. Foals reach adulthood at around 5 years of age and from there, live up to 25 to 30 in human years.
     </p>
   
@@ -112,6 +113,17 @@
 @import url(https://fonts.googleapis.com/css?family=Antic);
 @import url(https://fonts.googleapis.com/css?family=Lora);
 
+  /*header*/
+.headerimage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("https://www.clementoni.com/media/prod/dk/39441/running-horses-1000-pcs-panorama-puzzle_YJG5EI8.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 86px;}
+body{margin:0;}
+  
 /*table*/
 table, th, td {border: 3px solid lightgray;}
 table {
