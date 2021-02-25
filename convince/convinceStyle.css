@@ -24,10 +24,6 @@
   font-family: Antic;
   display:inline-block;
   padding:2.3%;}
-.logo img{float:left;
-  width:70px;
-  padding:4px;
-  margin:2px;}
 .topnav a:hover {
   color: #242947;}
 .topnav a.active {color: #242947;}  
