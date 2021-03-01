@@ -27,3 +27,5 @@
 .topnav a:hover {
   color: #242947;}
 .topnav a.active {color: #242947;}  
+
+  @media screen and (max-width: 600px) {.topnav a{font-size: 9pt;}}
