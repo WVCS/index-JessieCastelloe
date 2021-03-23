@@ -28,20 +28,51 @@
   </div> </div> </header>  
   
   <body>
-     <div id="top" class="headerimage"></div> 
-
-   <ul class="foodnav">
+     <ul class="foodnav">
+  <div class="logo">
+<img src="https://github.com/WVCS/index-JessieCastelloe/blob/main/food/foodLogo.png?raw=true"/> </div>
   <li><a href="/">Home</a></li>
   <li><a href="/about/">About</a></li>
   <li><a href="/work/">Work</a></li>
   <li><a href="/clients/">Clients</a></li>
   <li><a href="/contact/">Contact</a></li>
 </ul>
-
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
   
-  <div class="wrapper">
-  <div class="box header">header</div> 
+ <div class="wrapper">
+   <div class="box spacer"></div>
+   <div class="box featured"><h1>Featured Flavors of the Month!</h1></div>
+  <div class="box header"><div class="carousel">
+       <div class="carousel-inner">
+        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item">
+            <img src="https://cdn.carvel.com/-/media/carvel/menu/ice-cream/scooped/49-oreo_cookies_and-cream.png?v=1&d=20180327T225025Z">
+            <div class="flavor">Cookies-n-Cream</div>
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+            <img src="https://cdn.carvel.com/-/media/carvel/menu/ice-cream/scooped/41-cake_mix.png?v=1&d=20180327T225043Z&h=600&w=600&la=en&hash=829BC18A518B17B80F9C929E44D502ED">
+            <div class="flavor">Birthday Cake</div>
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+            <img src="https://cdn.carvel.com/-/media/carvel/menu/ice-cream/scooped/55-cherry_vanilla.png?v=1&d=20180327T225031Z&h=600&w=600&la=en&hash=ED647EF96806929ED9A2F6CBB3756487">
+            <div class="flavor">Cherry Vanilla</div> </div>
+        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+        <label for="carousel-2" class="carousel-control next control-1">›</label>
+        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+        <label for="carousel-3" class="carousel-control next control-2">›</label>
+        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+        <label for="carousel-1" class="carousel-control next control-3">›</label>
+        <ol class="carousel-indicators">
+            <li> <label for="carousel-1" class="carousel-bullet">•</label> </li>
+            <li> <label for="carousel-2" class="carousel-bullet">•</label> </li>
+            <li> <label for="carousel-3" class="carousel-bullet">•</label> </li> </ol>
+    </div> </div></div> 
+  <div class="box location">
+    <div class='container'>
+     <input type="text" id="searchInput" placeholder="Find your location...">
+     <div id='submitsearch' style="">
+     <span>Search</span> </div></div></div> 
   <div class="box a">A</div>
   <div class="box b">B</div>
   <div class="box c">C</div>
@@ -53,19 +84,30 @@
   <div class="box h">H</div>
   <div class="box i">I</div>
   <div class="box section3">section 3</div>
-</div>
+  <div class="box footer"><div class="row">
+      <div class="column" style="background-color: #ffffff;">
+        <h2>ABOUT</h2>
+        <p>Locations</p>
+        <p>FAQs</p>
+        <p>Franchising</p>
+        <p></p></div>
+     <div class="column" style="background-color:#ffffff;">
+        <h2>CONTACT</h2>
+        <p>Career Opportunities</p> 
+        <p>Report a Problem</p>
+        <p>Make a Suggestion</p>
+        </div>
+    <div class="column" style="background-color:#ffffff;">
+        <h2>SERVICES</h2>
+        <p>Order Online</p>
+        <p>Events</p>
+        <p>Catering</p>
+        </div> </div>
     
     </body>
   
   <style>
-   
-
-
-.logo img{float:left;
-  width:45px;
-  padding:0px;
-  margin:6px;}  
-
+    
  /*header*/
 .headerimage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("https://6ac64e89d437563bf1ce-81a8643007f9a29c463df9cee8256c35.ssl.cf4.rackcdn.com/95fdc0359b4fc2284a55a4-l.jpg");
@@ -76,18 +118,23 @@
   position: relative;
   top: 0px;}
 
-
+.logo img{float:left;
+  width:50px;
+  padding:0px;
+  margin:0px;}  
+    
 .foodnav{
     border:1px solid #ffffff;
     border-width:1px 0;
     list-style:none;
     margin:0;
-    padding:0;
+    padding:15px;
     text-align:center;
-  background-color: #ffffff;
-  position: sticky;
-  top:68px;
-  z-index:50;}
+    background-color: #ffffff;
+    position: sticky;
+    top:68px;
+    z-index:50;
+    box-shadow: 0px 1px 5px #aaaaaa;}
 .foodnav li{
     display:inline;}
 .foodnav a{
@@ -112,51 +159,205 @@
     color: #fff;
      padding: 20px;
     font-size: 150%;}
-
+.spacer {grid-column: 1 / span 8;
+    grid-row: 1;}
+.featured {grid-column: 1 / span 8;
+    grid-row: 2;}
 .header {grid-column: 1 / span 8;
-    grid-row:1}
+    grid-row: 3;}
+.location{grid-column: 1/span 8;
+    grid-row: 4;}
   .a {
     grid-column: 1 / span 1;
-    grid-row:2 / span 3;
+    grid-row: 5 / span 3;
     border-radius: 0px;}
   .b {
     grid-column: 8 / 8;
-    grid-row: 2 / span 3;}
+    grid-row: 5 / span 3;}
   .c {
     grid-column: 2 / 4;
-    grid-row: 2 / span 2;}
+    grid-row: 5 / span 2;}
   .d {
     grid-column: 4/8 ;
-    grid-row: 2 ;}
+    grid-row: 5 ;}
 .f{
     grid-column: 4/8 ;
-    grid-row: 3 / span 2 ;}
+    grid-row: 6 / span 2 ;}
 .g{
     grid-column: 2 / 4;
-    grid-row: 4 ;}
+    grid-row: 7 ;}
 .section {grid-column: 1 / span 8;
-    grid-row:5}
+    grid-row: 8;}
 .section2 {grid-column: 1 / span 8;
-    grid-row:6 }
+    grid-row: 9 ;}
 .h{
     grid-column: 1/3 ;
-    grid-row: 9 ;}
+    grid-row: 12 ;}
 .i{
     grid-column: 4/9 ;
-    grid-row: 9 ;}
+    grid-row: 12 ;}
 .section3 {grid-column: 1 / span 8;
-    grid-row:12 }
+    grid-row: 15;}
+.footer {grid-column: 1 / span 8;
+grid-row:16;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 240px;
+  color:#FBAFDD;
+  text-align:center;
+  font-family: Lora;
+  font-size: 14pt;}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;}
+.column p{color: #96979b;font-size: 11pt;
+line-height: 1; font-family: Averia Serif Libre;}
+.column p:hover{text-decoration:underline;}
+  @media screen and (max-width: 600px) {.column {width: 100%; top: 70px;height: 160px;} .row{margin-left: 50px;
+  margin-right:50px}.column h2{font-size: 14pt;}}
+
+/* ____________ Carousel ____________ */
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+margin-left:5%;}
+
+.flavor{font-family:syne mono;font-weight: bold;}
+@media (min-width:700px){.flavor{position: absolute; top: 40%; left: 250px; display:block;} .featured h1{font-size: 15pt;text-align:center;}}
+@media (max-width:700px){.flavor{position: absolute; top: 40%; left: 213px; display:block;}.featured h1{font-size:18pt; text-align:center;}}
+
+.carousel-item img {
+    display: block;
+    height: 200px;
+    max-width: 100%;}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;}
+
+.carousel-control.prev {left: 2%;}
+.carousel-control.next {right: 2%;}
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {display: block;}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {color: #428bca;}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);}
+
+/* ___ Searchbar ___ */
+input:focus {
+    outline-offset: -2px;}
+.container {
+    position:relative;
+    top: 10%;
+    left: 50%;
+  	width:100%;} 
+#submitsearch{
+  border: 1px solid rgb(138, 134, 134);
+  margin-left: -82px;
+  padding: 5px;
+  border-radius: 19px;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 8px; 
+  padding-top: 4px;
+  display: none;
+  box-shadow: 0 0 1px black;     
+  margin-right:110px;}
+#searchInput {
+      width: 48%;
+      border: 1px solid #000;
+      border-radius: 30px;
+      font-size: 16px;
+      background-color: white;
+      background-image:url('https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-24.png');
+      background-position: 10px 7px;
+      background-repeat: no-repeat;
+      padding: 8px 20px 8px 40px;
+      -webkit-transition: width 0.8s ease-in-out;
+      transition: width 0.8s ease-in-out;
+      outline: none;
+      opacity: 0.9;}
     
     
     </style>
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   
