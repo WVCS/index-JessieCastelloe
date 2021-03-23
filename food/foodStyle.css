@@ -76,7 +76,3 @@ font-family: antic;}
 .nav > .nav-links > a:hover {background-color: rgba(235, 238, 250, 0.45);}
   .nav-links a.active {background-color: rgba(235, 238, 250, 0.45);}}
 
-.logo img{display:block;
-  width:40px;
-  padding:0px;
-  margin:0px;}
