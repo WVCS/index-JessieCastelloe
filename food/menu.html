@@ -5,10 +5,140 @@
   <title> Menu </title>
 </head>
   
+  <header> 
+    <div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+    </div> </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label> </div>
   
+  <div class="nav-links">
+    <a href="https://wvcs.github.io/index-JessieCastelloe/">Home</a>
+    <a href="https://wvcs.github.io/index-JessieCastelloe/Noun.html">Noun Project</a>
+    <a href="https://wvcs.github.io/index-JessieCastelloe/convince/home.html">Convince</a>
+    <a class="active" href="https://wvcs.github.io/index-JessieCastelloe/food/home.html">Food</a>
+  </div> </div> </header>  
   
+  <body>
+      <div class="headerimage"></div> 
+
+   <ul class="foodnav">
+  <div class="logo">
+<img src="https://github.com/WVCS/index-JessieCastelloe/blob/main/food/foodLogo.png?raw=true"/> </div>
+  <li><a href="https://wvcs.github.io/index-JessieCastelloe/food/home.html">Home</a></li>
+  <li><a href="https://wvcs.github.io/index-JessieCastelloe/food/menu.html">Menu</a></li>
+  <li><a href="#onlineorder">Order Online</a></li>
+  <li><a href="#location">Locations</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+    
+    
+    
+   <div class="wrapper"> 
+     <div class="box footer"><div class="row">
+      <div class="column" style="background-color: #ffffff;">
+        <h2>ABOUT</h2>
+        <p>Locations</p>
+        <p>FAQs</p>
+        <p>Franchising</p>
+        <p></p></div>
+     <div class="column" style="background-color:#ffffff;">
+        <h2>CONTACT</h2>
+        <p>Career Opportunities</p> 
+        <p>Report a Problem</p>
+        <p>Make a Suggestion</p>
+        </div>
+    <div class="column" style="background-color:#ffffff;">
+        <h2>SERVICES</h2>
+        <p>Order Online</p>
+        <p>Events</p>
+        <p>Catering</p>
+        </div> </div>
   
+</body>
+     
+ <style>    
+  /*header*/
+.headerimage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("https://6ac64e89d437563bf1ce-81a8643007f9a29c463df9cee8256c35.ssl.cf4.rackcdn.com/95fdc0359b4fc2284a55a4-l.jpg");
+  height: 55vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0px;}
+
+.logo img{float:left;
+  width:50px;
+  padding:0px;
+  margin:0px;}  
+.foodnav{
+    border:1px solid #ffffff;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:15px;
+    text-align:center;
+    font-family: averia serif libre;
+    background-color: #ffffff;
+    position: sticky;
+    top:68px;
+    z-index:50;
+    box-shadow: 0px 1px 5px #aaaaaa;}
+.foodnav li{
+    display:inline;}
+.foodnav a{
+    display:inline-block;
+    color: #d05353;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;}
+.foodnav a:hover {
+  border-bottom: 3px solid #6793d5;
+  color:#6793d5;}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;}
+  .box {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px;
+    font-size: 150%;}
+.footer {grid-column: 1 / span 8;
+grid-row:16;
+}
+
+/*___ Column ___*/
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 240px;
+  color:#d05353;
+  text-align:center;
+  font-family: averia serif libre;
+  font-size: 14pt;}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;}
+.column p{color: #96979b;font-size: 11pt;
+line-height: 1; font-family: Averia Serif Libre;}
+.column p:hover{text-decoration:underline;}
+  @media screen and (max-width: 600px) {.column {width: 100%; top: 70px;height: 160px;} .row{margin-left: 50px;
+  margin-right:50px}.column h2{font-size: 14pt;}}
   
-  
+  </style>
   
   </html>
