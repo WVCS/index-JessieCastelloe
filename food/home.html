@@ -26,20 +26,22 @@
   </div> </div> </header>  
   
   <body>
-     <ul class="foodnav">
+      <div class="headerimage"></div> 
+
+   <ul class="foodnav">
   <div class="logo">
 <img src="https://github.com/WVCS/index-JessieCastelloe/blob/main/food/foodLogo.png?raw=true"/> </div>
-  <li><a href="/">Home</a></li>
-  <li><a href="/about/">About</a></li>
-  <li><a href="/work/">Work</a></li>
-  <li><a href="/clients/">Clients</a></li>
-  <li><a href="/contact/">Contact</a></li>
+  <li><a href="https://wvcs.github.io/index-JessieCastelloe/food/home.html">Home</a></li>
+  <li><a href="/about/">Menu</a></li>
+  <li><a href="#onlineorder">Order Online</a></li>
+  <li><a href="#location">Locations</a></li>
+  <li><a href="#contact">Contact</a></li>
 </ul>
   
  <div class="wrapper">
    <div class="box spacer"></div>
-   <div class="box featured"><h1>Featured Flavors</h1></div>
-  <div class="box header"><div class="carousel">
+   <div class="box featured"><div class="ff">Featured Flavors</div></div>
+   <div class="box header"><div id="location" class="carousel">
        <div class="carousel-inner">
         <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
         <div class="carousel-item">
@@ -67,25 +69,46 @@
             <li> <label for="carousel-3" class="carousel-bullet">•</label> </li> </ol>
     </div> </div></div> 
       <div class="box locationtext">
-        <div class="findlocation">Find a store near you</div> </div>
+        <div  class="findlocation">Find a store near you</div> </div>
       <div class="box location">
       <div class='container'>
       <input type="text" id="searchInput" placeholder="Zip Code or Location">
      <div id='submitsearch' style="">
      <span>Search</span> </div></div></div> 
-  <div class="box a">A</div>
-   <div class="box b">B</div>
+  
   <div class="box c"> 
     <img src="https://cdn.britannica.com/50/80550-050-5D392AC7/Scoops-kinds-ice-cream.jpg"> </div>
-  <div class="box d">D</div>
-  <div class="box f">F</div>
-  <div class="box g">G</div>
-  <div class="box section">section</div>
-  <div class="box section2">section 2</div>
-  <div class="box h">H</div>
-  <div class="box i">I</div>
-  <div class="box section3">section 3</div>
-  <div class="box footer"><div class="row">
+   <div class="box d"><a href="" class="button">See Full Menu &LongRightArrow;</a></div>
+   <div class="box f" id="contact"> </div>
+   <div class="box section" id="onlineorder">
+     <div class="contactinfo">
+       <h3>Contact Info</h3>
+         <p>customerservice@soldcone.com</p>
+         <p>(123) 456-7890</p>
+       </br>
+         <p>Sold Cone Corp</p>
+         <p>1234 Waffle Cone</p>
+         <p>Austin, TX 54321</p>
+       </div></div>
+   <div class="box sectionimage"></div>
+   <div class="box section2"> <div class="oo"> Online Order </div></div>
+   <div class="box h">
+     <form>
+  <input type="radio" id="curbside" name="pickup" value="curbside">
+  <label for="curbside">Curbside</label><br>
+  <input type="radio" id="doorstep delivery" name="pickup" value="doorstep delivery">
+  <label for="doorstep delivery">Doorstep Delivery</label>
+</form> <div class="dprice">+4.99</div> </div>
+   
+   <div class="box i">
+     <form action="/action_page.php">
+  <label for="appt">Select a time for pickup:</label>
+  <input type="time" id="appt" name="appt">
+  <input type="submit" id="submit">
+</form> </div>
+   <div class="box section3">section 3</div>
+   <div class="box s3image" ></div>
+   <div class="box footer"><div class="row">
       <div class="column" style="background-color: #ffffff;">
         <h2>ABOUT</h2>
         <p>Locations</p>
@@ -130,6 +153,7 @@
     margin:0;
     padding:15px;
     text-align:center;
+    font-family: averia serif libre;
     background-color: #ffffff;
     position: sticky;
     top:68px;
@@ -155,63 +179,75 @@
     background-color: #fff;
     color: #444;}
   .box {
-    background-color: #B9D4FD;
+    background-color: #ffffff;
     color: #fff;
-     padding: 20px;
+    padding: 10px;
     font-size: 150%;}
 .spacer {grid-column: 1 / span 8;
     grid-row: 1;}
 .featured {grid-column: 1 / span 8;
-    grid-row: 2;}
+    grid-row: 2;
+    font-family: averia serif libre;
+    background-color:#FBAFDD;}
+    .ff{font-size: 30pt; text-align:center; text-shadow: 0 0 4px #d05353}
 .header {grid-column: 1 / span 8;
-    grid-row: 3;}
-.locationtext{grid-column: 1/span 5;
-    grid-row: 4;}
+    grid-row: 3;
+    padding: 0px;}
+.locationtext{grid-column: 1/span 6;
+    grid-row: 4;
+    background-color:#B9D4FD;}
 .location{grid-column: 6/span 3;
-    grid-row: 4;}
-  .a {
-    grid-column: 1 / span 1;
-    grid-row: 5 / span 3;
-    border-radius: 0px;}
-  .b {
-    grid-column: 8 / 8;
-    grid-row: 5 / span 3;}
+    grid-row: 4;
+    background-color:#B9D4FD;}
   .c {
-    grid-column: 2 / 4;
-    grid-row: 5 / span 2;}
+    grid-column: 3 /4;
+    grid-row: 5 ;}
   .d {
-    grid-column: 4/8 ;
+    grid-column: 5/ 8;
     grid-row: 5 ;}
 .f{
-    grid-column: 4/8 ;
+    grid-column: 1 / span 8 ;
     grid-row: 6 / span 2 ;}
-.g{
-    grid-column: 2 / 4;
-    grid-row: 7 ;}
 .section {grid-column: 1 / span 8;
     grid-row: 8;}
 .section2 {grid-column: 1 / span 8;
-    grid-row: 9 ;}
+    grid-row: 9 ;
+    font-family: averia serif libre;
+    background-color:#FBAFDD;}
+  .oo{font-size: 30pt; text-align:center; text-shadow: 0 0 4px #d05353;}
 .h{
-    grid-column: 1/3 ;
-    grid-row: 12 ;}
+    grid-column: 3/4;
+    grid-row: 12 ;
+    position:relative;
+    margin-left: 20%;
+    font-family: averia serif libre;
+    border-radius: 10px;
+    font-size: 15pt;
+    background-color:#FBAFDD;
+    padding: 20px;}
 .i{
-    grid-column: 4/9 ;
-    grid-row: 12 ;}
+    grid-column: 5/8 ;
+    grid-row: 12 ;
+    font-family: averia serif libre;
+    position:relative;
+    border-radius: 10px;
+    background-color:#FBAFDD;
+    padding: 20px;}
 .section3 {grid-column: 1 / span 8;
     grid-row: 15;}
 .footer {grid-column: 1 / span 8;
 grid-row:16;
 }
 
+/*___ Column ___*/
 .column {
   float: left;
   width: 33.33%;
   padding: 10px;
   height: 240px;
-  color:#FBAFDD;
+  color:#d05353;
   text-align:center;
-  font-family: Lora;
+  font-family: averia serif libre;
   font-size: 14pt;}
 .row:after {
   content: "";
@@ -227,7 +263,7 @@ line-height: 1; font-family: Averia Serif Libre;}
 .carousel {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    margin-top: 26px;}
+    margin-top: 0px;}
 
 .carousel-inner {
     position: relative;
@@ -245,7 +281,7 @@ line-height: 1; font-family: Averia Serif Libre;}
     transition: opacity 0.6s ease-out;
 margin-left:5%;}
 
-.flavor{font-family:syne mono;font-weight: bold;}
+.flavor{font-family:syne mono;font-weight: bold; color:black;}
 @media (min-width:700px){.flavor{position: absolute; top: 40%; left: 300px; display:block;} .featured h1{font-size: 20pt;text-align:center;}}
 @media (max-width:700px){.flavor{position: absolute; top: 40%; left: 213px; display:block;}.featured h1{font-size:18pt; text-align:center;}}
 
@@ -357,14 +393,86 @@ input:focus {
       transition: width 0.8s ease-in-out;
       outline: none;
       opacity: 0.9;}
-.findlocation{font-size: 20pt;}
-.c img{width: 100%;
-position:relative;}
+.findlocation{font-size: 20pt;
+  position: relative;
+  display:block;
+  margin-left: 10%;
+  font-family:Averia Serif Libre;}
+.c img{width: 23vw;
+  position: relative;
+  border: 3px solid #6793d5;
+  border-radius: 7px;}
+
+@media (max-width:700px){.button{font-size: 10pt; padding: 13px;}}
+@media (min-width:700px){.button{top: 20%; padding: 20px;}}
+.button{display: inline-block;
+  flex: 1 1 auto;
+  position:relative;
+  font-family:Averia Serif Libre;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:none;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 10px #97accc;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #b9d4fd 0%, #96bcf6 100%);}
+
+.button:hover {
+  background-image: linear-gradient(to bottom, #b5d2ff 0%, #8eb4ec 100%);}
+
+.button:active {
+  background-image: linear-gradient(to bottom, #b5d2ff 0%, #8eb4ec 100%);
+  box-shadow: 0 0 5px #647a9b;
+  transform: scale(0.99,0.99);
+  text-decoration:none;}
+
+.sectionimage {
+  background-image: url("https://media.farandwide.com/9d/21/9d21ebf8d2164541acbf0b9744a54213.jpeg");
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0px;
+  grid-column: 1 / span 8 ;
+  grid-row: 6 / span 2 ;}
+
+.i label{display:block;}
+#submit {
+  background-image: linear-gradient(to bottom, #b9d4fd 0%, #96bcf6 100%);
+  border-color:#3c71c1;
+  font-family:averia serif libre;
+  color:#27569c;
+border-radius: 5px;}
+#appt{background-color: white; border-color:silver;}
+.dprice{position: relative;
+        font-size: 10pt;
+        font-family: averia serif libre;
+        display:block;
+        margin-left: 10%;}
+
+.s3image {
+  background-image: url("https://wallpaperaccess.com/full/240306.jpg");
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0px;
+  grid-column: 1 / span 8;
+  grid-row: 15;}
+
+.contactinfo{text-align:center;
+    font-family:averia serif libre;
+    line-height: 0.5;}
+.contactinfo h3{color: #d05353; font-size: 19pt;}
+.contactinfo p{color: #96979b;font-size: 11pt;}
     
     
     </style>
   
-  
-  
-  
+
   </html>
