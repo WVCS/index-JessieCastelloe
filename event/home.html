@@ -29,24 +29,156 @@
 
 <html>
   
-  
-  
-  
   <body>
+   <br/><br/><br/>
+     <ul class="foodnav">
+  <div class="logo">
+<img src="https://raw.githubusercontent.com/WVCS/index-JessieCastelloe/main/event/event.png"/> </div>
+  <li><a href="https://wvcs.github.io/index-JessieCastelloe/food/home.html">Home</a></li>
+  <li><a href="https://wvcs.github.io/index-JessieCastelloe/food/menu.html">Menu</a></li>
+  <li><a href="#onlineorder">Order Online</a></li>
+  <li><a href="#location">Locations</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+    <div class="headerimage"></div>
+    <div class="headimg"> <img src="https://raw.githubusercontent.com/WVCS/index-JessieCastelloe/main/event/event.png"></div>   
+    
+<div class="wrapper">
+  <div class="box title">Family Triathlon</div>
+  <div class="box b">
+    <div class="responsive one"> <div class="gallery">
+     <img src="https://blog.petmeds.com/wp-content/uploads/2015/03/happy-boy-and-dog.jpg" width="600" height="400">
+     <div class="desc">Bring your dogs!</div></div></div>
+   <div class="responsive"> <div class="gallery">
+     <img src="https://static.wixstatic.com/media/a1ba19_8c9dc30903364aec87ad7ec49bd59725~mv2.png/v1/fit/w_2500,h_1330,al_c/a1ba19_8c9dc30903364aec87ad7ec49bd59725~mv2.png" width="600" height="400">
+     <div class="desc">Swim, bike, run & have fun</div></div></div>
+   <div class="responsive"> <div class="gallery">
+     <img src="https://naturesmtnplayground.com/files/attractions/images/GRT2_2018.jpg" width="600" height="400">
+     <div class="desc">Bring friends & family</div></div></div>
+   <div class="clearfix"></div></div>
+  <div class="box c">C</div>
+  <div class="box d">D</div>
+  <div class="box e">E</div>
+</div>  
     
     
-    
-    </body>
-  
-  
+    </body>  
   
   <style>
+  .logo img{
+  float:left;
+  width:70px;
+  padding:0px;
+  margin:0px;}
+
+.headerimage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("https://us.123rf.com/450wm/panychev/panychev1704/panychev170400037/75666147-dark-blue-and-black-gradient-texture-background-abstract-surface-material.jpg?ver=6");
+  height: 70px;
+  opacity:0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;}
+
+.foodnav{
+    border:1px solid #ffffff;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:15px;
+    text-align:center;
+    font-family: balsamiq sans;
+    background-color: #ffffff;
+    position: sticky;
+    top:68px;
+    z-index:50;
+    box-shadow: 0px 1px 5px #aaaaaa;}
+.foodnav li{
+    display:inline;}
+.foodnav a{
+    display:inline-block;
+    color: #0abcec;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;}
+.foodnav a:hover {
+  border-bottom: 3px solid #0366AF;
+  color:#0366AF;}
+
+.headimg img{
+  position: relative;
+  height: 15vw;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;}
+
+/* GRID LAYOUT ---------- */
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, [col] auto ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: #fff2e6;
+    color: #000000;}
+  .box {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;}
+  .title {
+    grid-column: col / span 4;
+    grid-row: row 1 ;
+    color: #0abcec;
+    text-align:center;
+    font-family: itim;}
+  .b {
+    grid-column: col 1 / span 4 ;
+    grid-row: row 2 ;}
+  .c {
+    grid-column: col ;
+    grid-row: row 3 ;}
+  .d {
+    grid-column: col 2 / span 3 ;
+    grid-row: row 3 ;}
+  .e {
+    grid-column: col / span 4;
+    grid-row: row 4;}
+
+@media (max-width:1000px){.title{font-size:25pt;}}
+@media (min-width:1000px){.title{font-size:35pt;}}
+
+
+/* Gallery----------- */
+div.gallery {
+  border: 1px solid #ccc;}
+div.gallery:hover {
+  border: 1px solid #777;}
+div.gallery img {
+  width: 100%;
+  height: auto;}
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family:balsamiq sans;}
+* {box-sizing: border-box;}
+.responsive {
+  padding: 8px;
+  float: left;
+  width: 33.33%;
+  }
+@media only screen and (max-width: 800px) {.responsive {width: 50%; margin: 6px 0;} .one{position: relative; margin-top:23.5%;}}
+@media only screen and (max-width: 500px) {.responsive { width: 100%;}}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;}
+
     
     
     </style>
-  
-  
 
-  
-  
   </html>
