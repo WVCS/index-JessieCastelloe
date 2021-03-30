@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Antic);
 @import url(https://fonts.googleapis.com/css?family=Lora);
+@import url(https://fonts.googleapis.com/css?family=Balsamiq+Sans);
+@import url(https://fonts.googleapis.com/css?family=Itim);
 
 * {box-sizing: border-box;}
 
@@ -76,8 +78,5 @@ font-family: antic;}
 .nav > .nav-links > a:hover {background-color: rgba(235, 238, 250, 0.45);}
   .nav-links a.active {background-color: rgba(235, 238, 250, 0.45);}}
 
-.logo img{display:block;
-  width:40px;
-  padding:0px;
-  margin:0px;}
+
 
