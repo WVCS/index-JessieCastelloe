@@ -1,1 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Antic);
+@import url(https://fonts.googleapis.com/css?family=Lora);
+
+* {box-sizing: border-box;}
+
+body {margin: 0px; background: white;}
+
+.nav {
+  height: 69px;
+  width: 100%;
+  background-color: #b7bbc9;
+  position: fixed;
+ z-index: 100;}
+
+.nav > .nav-header {display: inline;}
+
+.nav > .nav-header > .nav-title { display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;}
+
+.nav > .nav-btn {display: none;}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+font-family: antic;}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 23px 10px 23px 10px;
+  text-decoration: none;
+  color: #efefef;}
+
+@media (min-width:600px) {
+  .nav > .nav-links > a:hover {color: #242947;}
+.nav-links a.active {color: #242947;}}
+
+.nav > #nav-check {display: none;}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 8px;}
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    transition: transform 0.7s;}
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {transform: rotate(90deg);}
+  .nav > .nav-btn > label > span {display: block;
+  width: 25px;
+  height: 10px;
+  border-top: 2.5px solid #ffffff;}
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #8e929e;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 69px;
+    left: 0px;}
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;}
+  .nav > #nav-check:not(:checked) ~ .nav-links {height: 0px;}
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(350px);
+    overflow-y: auto;}
+.nav > .nav-links > a:hover {background-color: rgba(235, 238, 250, 0.45);}
+  .nav-links a.active {background-color: rgba(235, 238, 250, 0.45);}}
+
+.logo img{display:block;
+  width:40px;
+  padding:0px;
+  margin:0px;}
 
