@@ -32,17 +32,24 @@
      <ul class="foodnav">
   <div class="logo">
 <img src="https://raw.githubusercontent.com/WVCS/index-JessieCastelloe/main/event/event.png"/> </div>
-  <li><a href="https://wvcs.github.io/index-JessieCastelloe/food/home.html">Home</a></li>
-  <li><a href="https://wvcs.github.io/index-JessieCastelloe/food/menu.html">Menu</a></li>
+  <li><a href="https://wvcs.github.io/index-JessieCastelloe/event/home.html">Home</a></li>
+  <li><a href="#date">Date</a></li>
   <li><a href="#onlineorder">Order Online</a></li>
   <li><a href="#location">Locations</a></li>
   <li><a href="#contact">Contact</a></li>
 </ul>
     <div class="headerimage"></div>
-    <div class="headimg"> <img src="https://raw.githubusercontent.com/WVCS/index-JessieCastelloe/main/event/event.png"></div>   
+    <div id="date" class="headimg"> <img src="https://raw.githubusercontent.com/WVCS/index-JessieCastelloe/main/event/event.png"></div>
+    
     
 <div class="wrapper">
   <div class="box title">Family Triathlon</div>
+  <div class="box date">
+    <p>1 pm - 5 pm</p>
+    <p>Saturday, July 10, 2021</p>
+    <p>Stoneridge Park, San Diego, CA</p>
+    
+   </div>
   <div class="box b">
     <div class="responsive one"> <div class="gallery">
      <img src="https://blog.petmeds.com/wp-content/uploads/2015/03/happy-boy-and-dog.jpg" width="600" height="400">
@@ -54,10 +61,19 @@
      <img src="https://naturesmtnplayground.com/files/attractions/images/GRT2_2018.jpg" width="600" height="400">
      <div class="desc">Bring friends & family</div></div></div>
    <div class="clearfix"></div></div>
-  <div class="box c">C</div>
-  <div class="box d">D</div>
+  <div class="box c">
+    <p>A mini triathlon for families and dogs. Similar to a regular triathlon, there will be swimming, biking and running. Like mentioned above, dogs are allowed on certain conditions. <a href=""> Conditions listed further down.</a> There will be alternate routes for those who prefer not to or can not swim or bike or both.</p>
+  </div>
+  <div class="box d">
+   <div class="route">Route distances</div> 
+    <p>Swim Route - 0.5 or 1/2 mile</p>
+    <p>Bike Route - 7 miles</p>
+    <p> Run Route - 3 miles </p>
+      
+    
+    </div>
   <div class="box e">E</div>
-</div>  
+</div>
     
     
     </body>  
@@ -134,31 +150,49 @@
     color: #0abcec;
     text-align:center;
     font-family: itim;}
+  .date {
+    grid-column: col 1 / span 4 ;
+    grid-row: row 2 ;
+    color: #0366AF;
+    text-align:center;
+    font-family: balsamiq sans;
+    font-size: 11pt;
+    padding:0;}
   .b {
     grid-column: col 1 / span 4 ;
-    grid-row: row 2 ;}
+    grid-row: row 3 ;}
   .c {
-    grid-column: col ;
-    grid-row: row 3 ;}
+    grid-column: col 1 / span 4;
+    grid-row: row 4 ;
+    font-family: balsamiq sans;}
   .d {
-    grid-column: col 2 / span 3 ;
-    grid-row: row 3 ;}
+    grid-column: col / span 4 ;
+    grid-row: row 5 ;
+    font-family:itim;
+    font-size: 20pt;
+    color: #0abcec;}
   .e {
     grid-column: col / span 4;
-    grid-row: row 4;}
+    grid-row: row 6;}
 
 @media (max-width:1000px){.title{font-size:25pt;}}
 @media (min-width:1000px){.title{font-size:35pt;}}
+@media (max-width:800px){.d{text-align:center;}}
+@media (min-width:800px){.d route{text-align:center;}.d p {float:left; padding: 10px;}}
 
-
+.d p{font-family:balsamiq sans;
+     font-size: 14pt;
+     color:#0366AF;}
 /* Gallery----------- */
 div.gallery {
-  border: 1px solid #ccc;}
+  box-shadow: 0 0 0 3px #0366AF;
+  border-radius: 12px;}
 div.gallery:hover {
-  border: 1px solid #777;}
+  box-shadow: 0 0 4px 3px #0366AF;}
 div.gallery img {
   width: 100%;
-  height: auto;}
+  height: auto;
+  border-radius: 12px;}
 div.desc {
   padding: 15px;
   text-align: center;
@@ -167,8 +201,7 @@ div.desc {
 .responsive {
   padding: 8px;
   float: left;
-  width: 33.33%;
-  }
+  width: 33.33%;}
 @media only screen and (max-width: 800px) {.responsive {width: 50%; margin: 6px 0;} .one{position: relative; margin-top:23.5%;}}
 @media only screen and (max-width: 500px) {.responsive { width: 100%;}}
 .clearfix:after {
