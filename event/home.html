@@ -28,15 +28,14 @@
 <html>
   
   <body>
-   <br/><br/><br/>
+  <br/><br/><br/>
      <ul class="foodnav">
   <div class="logo">
 <img src="https://raw.githubusercontent.com/WVCS/index-JessieCastelloe/main/event/event.png"/> </div>
   <li><a href="https://wvcs.github.io/index-JessieCastelloe/event/home.html">Home</a></li>
   <li><a href="#date">Date</a></li>
-  <li><a href="#onlineorder">Order Online</a></li>
-  <li><a href="#location">Locations</a></li>
-  <li><a href="#contact">Contact</a></li>
+  <li><a href="#triathlonmap">Map</a></li>
+  <li><a href="#conditions">Rules for Dogs</a></li>
 </ul>
     <div class="headerimage"></div>
     <div id="date" class="headimg"> <img src="https://raw.githubusercontent.com/WVCS/index-JessieCastelloe/main/event/event.png"></div>
@@ -47,7 +46,7 @@
   <div class="box date">
     <p>1 pm - 5 pm</p>
     <p>Saturday, July 10, 2021</p>
-    <p>Stoneridge Park, San Diego, CA</p>
+    <p>Silverwood Lake, San Bernadino County, CA</p>
     
    </div>
   <div class="box b">
@@ -61,18 +60,38 @@
      <img src="https://naturesmtnplayground.com/files/attractions/images/GRT2_2018.jpg" width="600" height="400">
      <div class="desc">Bring friends & family</div></div></div>
    <div class="clearfix"></div></div>
-  <div class="box c">
-    <p>A mini triathlon for families and dogs. Similar to a regular triathlon, there will be swimming, biking and running. Like mentioned above, dogs are allowed on certain conditions. <a href=""> Conditions listed further down.</a> There will be alternate routes for those who prefer not to or can not swim or bike or both.</p>
+  <div class="box c" id="distance">
+    <p>A mini triathlon for families and dogs. Similar to a regular triathlon, there will be swimming, biking and running. Like mentioned above, dogs are allowed on certain conditions. <a href="#conditions"> Conditions listed further down.</a> There will be alternate routes for those who prefer not to or can not swim or bike or both.</p>
   </div>
-  <div class="box d">
-   <div class="route">Route distances</div> 
-    <p>Swim Route - 0.5 or 1/2 mile</p>
-    <p>Bike Route - 7 miles</p>
-    <p> Run Route - 3 miles </p>
-      
-    
+  <div class="box d" id="triathlonmap">
+   <div class="route">Route distances</div>
+    <ul class="pathd">
+    <li>Swim Route - 0.6 miles</li>
+    <li>Bike Route - 9.2 miles</li>
+    <li>Run Route - 3 miles</li> </ul>
     </div>
-  <div class="box e">E</div>
+  <div class="box e">
+   <div class="map"> <img src="https://github.com/WVCS/index-JessieCastelloe/blob/main/event/Triathlon%20Route%20Map.png?raw=true"></div>
+  </div>
+ <div class="box qrmap">
+   <div class="qr"> <a href="https://www.google.com/maps/d/u/0/viewer?mid=1Y-SNI5bxuqSNHq9nU2rdbs51bHIxBggh&ll=34.295591893826064%2C-117.29248503224994&z=14" target="_blank"><img src=" https://github.com/WVCS/index-JessieCastelloe/blob/main/event/Map%20QRcode.png?raw=true"></a></div>
+  </div> 
+  <div class="box mapdetails">
+    <div class="detail">
+      <p>The map above shows all the routes for the triathlon, including the alternate paths. For more clarification and details on the routes, scan or click on the QR code above.</p>
+      <p class="swimr">The swim route is a dark blue<p>
+      <p class="biker">The bike route is a light blue<p>
+      <p class="runr" id="conditions">The run path is an yellow-orange </p>
+      <p> <a href="#distance">Distances can be found above.</a> Rest stops providing water and portable toilets can be found mainly along the bike route.</p> </div> </div>
+  <div class="box dogs">
+    <div class="dogtitle">Conditions for Bringing Your Furry Friend</div>
+    <ul>
+      <li>Must be good with other dogs</li>
+      <li>Must be kept on a leash at all time</li>
+      <li>Must be good with strangers or other people</li>
+   </ul> 
+  </div>
+  <div class="box footer"></div>
 </div>
     
     
@@ -164,25 +183,45 @@
   .c {
     grid-column: col 1 / span 4;
     grid-row: row 4 ;
-    font-family: balsamiq sans;}
+    font-family: balsamiq sans;
+    font-size: 14pt;}
   .d {
-    grid-column: col / span 4 ;
+    grid-column: col 1/ span 4 ;
     grid-row: row 5 ;
     font-family:itim;
     font-size: 20pt;
-    color: #0abcec;}
+    color: #0abcec;
+    text-align:center;}
   .e {
     grid-column: col / span 4;
-    grid-row: row 6;}
+    grid-row: row 6;
+    background-color:transparent;}
+ .qrmap { 
+    grid-column: col / span 4;
+    grid-row: row 7;
+    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;}
+ .mapdetails {
+    grid-column: col / span 4;
+    grid-row: row 8;}
+ .dogs {
+    grid-column: col / span 4;
+    grid-row: row 10;}
+.footer{
+    grid-column: col / span 4;
+    grid-row: row 11;}
 
 @media (max-width:1000px){.title{font-size:25pt;}}
 @media (min-width:1000px){.title{font-size:35pt;}}
-@media (max-width:800px){.d{text-align:center;}}
-@media (min-width:800px){.d route{text-align:center;}.d p {float:left; padding: 10px;}}
+@media (max-width:800px){.pathd li{font-size: 14pt; text-align:center;}}
+@media (min-width:800px){.pathd{position:realtive; font-size: 15pt; display:inline;} .pathd li{ display:inline-block; padding: 10px;}}
 
-.d p{font-family:balsamiq sans;
-     font-size: 14pt;
-     color:#0366AF;}
+.d li{font-family:balsamiq sans;
+     color:#0366AF;
+     list-style:none;}
+
+
 /* Gallery----------- */
 div.gallery {
   box-shadow: 0 0 0 3px #0366AF;
@@ -208,6 +247,25 @@ div.desc {
   content: "";
   display: table;
   clear: both;}
+
+.map img{display:block; width: 70%; margin-left:auto; margin-right:auto; border: 8px solid #ffffff; border-radius: 3px; box-shadow: 0 0 10px #F0C689;}
+.qr img{display:block; width: 40%; margin-left:auto; margin-right: auto;}
+.qr img:active{transform: scale(0.95); box-shadow: 0 0 4px #02243d;}
+@media only screen and (min-width: 600px) {.qr img{width: 45%; margin-left:auto; margin-right: auto;}.map img{width: 50%; border: 12px solid #ffffff; border-radius: 5px; box-shadow: 0 0 10px #F0C689;} .qrmap {margin-left: 40%; margin-right: 40%; padding: 15px;}}
+.detail{font-family: balsamiq sans;
+         font-size: 14pt;}
+.swimr, .biker, .runr {text-align: center; font-size:11pt;}
+.swimr{color:#0366AF;}
+.biker{color:#0abcec;}
+.runr{color:#F0C689;}
+.dogs ul{font-family: balsamiq sans;
+         font-size: 14pt;
+         text-align:center;
+         list-style-position: inside;}
+.dogtitle{font-family: itim;
+          color:#0abcec;
+          text-align: center;}
+.detail a,.c a{color:#0366AF; text-decoration:none;}
 
     
     
