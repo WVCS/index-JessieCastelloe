@@ -47,7 +47,6 @@
     <p>1 pm - 5 pm</p>
     <p>Saturday, July 10, 2021</p>
     <p>Silverwood Lake, San Bernadino County, CA</p>
-    
    </div>
   <div class="box b">
     <div class="responsive one"> <div class="gallery">
@@ -71,17 +70,17 @@
     <li>Run Route - 3 miles</li> </ul>
     </div>
   <div class="box e">
-   <div class="map"> <img src="https://github.com/WVCS/index-JessieCastelloe/blob/main/event/Triathlon%20Route%20Map.png?raw=true"></div>
+   <div class="map"> <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1Y-SNI5bxuqSNHq9nU2rdbs51bHIxBggh" width="80%" height="250"></iframe></div>
   </div>
  <div class="box qrmap">
-   <div class="qr"> <a href="https://www.google.com/maps/d/u/0/viewer?mid=1Y-SNI5bxuqSNHq9nU2rdbs51bHIxBggh&ll=34.295591893826064%2C-117.29248503224994&z=14" target="_blank"><img src=" https://github.com/WVCS/index-JessieCastelloe/blob/main/event/Map%20QRcode.png?raw=true"></a></div>
+   <div class="qr"><img src=" https://github.com/WVCS/index-JessieCastelloe/blob/main/event/Map%20QRcode.png?raw=true"></a></div>
   </div> 
   <div class="box mapdetails">
     <div class="detail">
-      <p>The map above shows all the routes for the triathlon, including the alternate paths. For more clarification and details on the routes, scan or click on the QR code above.</p>
-      <p class="swimr">The swim route is a dark blue<p>
+      <p>The map above shows all the routes for the triathlon, including the alternate paths. For more clarification and details on the routes, scan the QR code or click on the map above.</p>
+      <p class="swimr">The swim route is a yellow-orange<p>
       <p class="biker">The bike route is a light blue<p>
-      <p class="runr" id="conditions">The run path is an yellow-orange </p>
+      <p class="runr" id="conditions">The run path is a dark blue </p>
       <p> <a href="#distance">Distances can be found above.</a> Rest stops providing water and portable toilets can be found mainly along the bike route.</p> </div> </div>
   <div class="box dogs">
     <div class="dogtitle">Conditions for Bringing Your Furry Friend</div>
@@ -91,7 +90,15 @@
       <li>Must be good with strangers or other people</li>
    </ul> 
   </div>
-  <div class="box footer"></div>
+  <div class="box picture1">
+    <div class="run">
+      <img src="https://media.istockphoto.com/photos/large-group-of-multi-generation-people-running-a-race-competition-in-picture-id1159982815?k=6&m=1159982815&s=612x612&w=0&h=PWeqYJm_lmYQES98CvcanKcvLgAL2PgiOzhKpb00vp4=">
+     </div> </div>
+    <div class="box picture2">
+    <div class="run">
+      <img src="https://sosanimalrescue.org/wp-content/uploads/2018/03/DDTR2017_-104.jpg">
+     </div> </div>
+     <div class="box footer"> </br></br></div>
 </div>
     
     
@@ -179,7 +186,8 @@
     padding:0;}
   .b {
     grid-column: col 1 / span 4 ;
-    grid-row: row 3 ;}
+    grid-row: row 3 ;
+    background-color:transparent;}
   .c {
     grid-column: col 1 / span 4;
     grid-row: row 4 ;
@@ -198,23 +206,32 @@
     background-color:transparent;}
  .qrmap { 
     grid-column: col / span 4;
-    grid-row: row 7;
+    grid-row: row 8;
     padding: 10px;
     margin-left: 20%;
     margin-right: 20%;}
  .mapdetails {
     grid-column: col / span 4;
-    grid-row: row 8;}
+    grid-row: row 11;}
  .dogs {
     grid-column: col / span 4;
-    grid-row: row 10;}
-.footer{
+    grid-row: row 13;}
+.picture1{
     grid-column: col / span 4;
-    grid-row: row 11;}
+    grid-row: row 15;
+    background-color:transparent;}
+.picture2{
+    grid-column: col / span 4;
+    grid-row: row 16;
+    background-color:transparent;}
+.footer{grid-column: col / span 4;
+  grid-row: row 18 ;}
+
+.picture1 img, .picture2 img{display:block; width: 50%; margin-left:auto; margin-right:auto; border-radius: 12px; border: 5px solid #0366AF;}
 
 @media (max-width:1000px){.title{font-size:25pt;}}
-@media (min-width:1000px){.title{font-size:35pt;}}
-@media (max-width:800px){.pathd li{font-size: 14pt; text-align:center;}}
+@media (min-width:1000px){.title{font-size:35pt;} iframe{width: 65%; height: 350px;}}
+@media (max-width:800px){.pathd li{font-size: 14pt; text-align:center;} .picture1 img, .picture2 img{width: 65%;}}
 @media (min-width:800px){.pathd{position:realtive; font-size: 15pt; display:inline;} .pathd li{ display:inline-block; padding: 10px;}}
 
 .d li{font-family:balsamiq sans;
@@ -225,7 +242,8 @@
 /* Gallery----------- */
 div.gallery {
   box-shadow: 0 0 0 3px #0366AF;
-  border-radius: 12px;}
+  border-radius: 12px;
+  background-color:white;}
 div.gallery:hover {
   box-shadow: 0 0 4px 3px #0366AF;}
 div.gallery img {
@@ -248,16 +266,15 @@ div.desc {
   display: table;
   clear: both;}
 
-.map img{display:block; width: 70%; margin-left:auto; margin-right:auto; border: 8px solid #ffffff; border-radius: 3px; box-shadow: 0 0 10px #F0C689;}
+iframe {display:block; margin-left:auto; margin-right:auto; border: 8px solid #ffffff; border-radius: 3px; box-shadow: 0 0 10px #F0C689;}
 .qr img{display:block; width: 40%; margin-left:auto; margin-right: auto;}
-.qr img:active{transform: scale(0.95); box-shadow: 0 0 4px #02243d;}
 @media only screen and (min-width: 600px) {.qr img{width: 45%; margin-left:auto; margin-right: auto;}.map img{width: 50%; border: 12px solid #ffffff; border-radius: 5px; box-shadow: 0 0 10px #F0C689;} .qrmap {margin-left: 40%; margin-right: 40%; padding: 15px;}}
 .detail{font-family: balsamiq sans;
          font-size: 14pt;}
 .swimr, .biker, .runr {text-align: center; font-size:11pt;}
-.swimr{color:#0366AF;}
+.swimr{color:#F0C689;}
 .biker{color:#0abcec;}
-.runr{color:#F0C689;}
+.runr{color:#0366AF;}
 .dogs ul{font-family: balsamiq sans;
          font-size: 14pt;
          text-align:center;
