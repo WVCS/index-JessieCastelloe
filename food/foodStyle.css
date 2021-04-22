@@ -74,7 +74,7 @@ font-family: antic;}
     width: 100%;}
   .nav > #nav-check:not(:checked) ~ .nav-links {height: 0px;}
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(350px);
+    height: auto;
     overflow-y: auto;}
 .nav > .nav-links > a:hover {background-color: rgba(235, 238, 250, 0.45);}
   .nav-links a.active {background-color: rgba(235, 238, 250, 0.45);}}
