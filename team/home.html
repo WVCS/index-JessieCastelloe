@@ -1,10 +1,30 @@
 <head>
   <link rel="icon" href="https://github.com/WVCS/index-JessieCastelloe/blob/main/team/Team_Band%20Logo.png?raw=true">
   <title> Team </title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
  
-<header> 
-  <ul class="teamnav">
+
+  <header> 
+
+<div class="w3-container">
+  <div class="logo">
+<img class="logo" src="https://github.com/WVCS/index-JessieCastelloe/blob/main/team/Team_Band%20Logo.png?raw=true"/> </div>
+  <div class="w3-dropdown-click">
+    <button onclick="myFunction()" class="w3-button w3-transparent"><img class="menuicon" src="https://cdn2.iconfinder.com/data/icons/music-player-icons-filled/41/Menu_Bar-512.png"></button>
+    <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+      <a href="https://wvcs.github.io/index-JessieCastelloe/team/home.html" class="w3-bar-item w3-button">Home</a>
+      <a href="https://wvcs.github.io/index-DanielaFisher23/team/players.html" class="w3-bar-item w3-button">Roster</a>
+      <a href="#scheduletop" class="w3-bar-item w3-button">Schedule</a>
+      <a href="https://wvcs.github.io/index-JessieCastelloe/" class="w3-bar-item w3-button">About</a>
+
+      
+    </div>
+  </div>
+</div>
+  
+
+<ul class="teamnav">
   <div class="logo">
 <img class="logo" src="https://github.com/WVCS/index-JessieCastelloe/blob/main/team/Team_Band%20Logo.png?raw=true"/> </div>
   <li><a href="https://wvcs.github.io/index-JessieCastelloe/team/home.html">Home</a></li>
@@ -12,7 +32,6 @@
   <li><a href="#scheduletop">Schedule</a></li>
   <li><a href="https://wvcs.github.io/index-JessieCastelloe/">About</a></li>
 </ul>
-
 </header>
 
 
@@ -20,8 +39,8 @@
 
 <html>
   
-  <body>
- <div class="headerimage"></div>
+    <body>
+<div class="headerimage"></div>
   
   <!--SCHEDULE---------->
 <div class="wrapper">
@@ -303,7 +322,7 @@
       <td>6</td>
     </tr>
   </table>
-</div>   
+</div>
     
     
    
@@ -312,9 +331,21 @@
 
 <!------------------------------------------------ STYLE START ------------------------------->
   <style>
-   body {
-  margin: 0;}
+body {margin: 0;}
 
+@media (max-width:550px){
+ .teamnav{display:none;}
+ .w3-container{float: left;
+   width: 100%;
+   background:#71092A;
+   box-shadow: 0px 1px 5px #000000;}
+ .menuicon{width: 30px; filter: invert(100%); }
+  w3-dropdown-content w3-bar-block w3-border{width: 50px;}
+ .logo{width: 60px; float:right; padding:2px;}}
+
+
+@media (min-width:550px){
+.w3-container{display: none;}
 .teamnav{
     border:1px solid #71092A;
     border-width:1px 0;
@@ -341,6 +372,7 @@
 .teamnav a:hover {
   border-bottom: 3px solid #ffffff;
   color:#ffffff;}
+  .logo{width: 80px; float:left;}}
 
 .headerimage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url("https://miro.medium.com/max/3840/1*5lqROJiq1v4EnXiFpyo6_Q.png");
@@ -350,10 +382,6 @@
   background-size: cover;
   position: relative;
   margin: 0 0 0 0;}
-
-.logo{width: 80px; float:left;}
-
-
 
 body{height:100%; width:100%; margin:0;
      background-image: url("https://fsb.zobj.net/crop.php?r=dskV04X2BTDm3qqPtlB5oaXb3I2OBhlTcWa9B4YzPlLrM2oa5UWX-oESlKULFgGEWGvmD4pJKfXP0gZtCJQEuU100QjLL9Z4D039kvC0qWsmBbwKrHZhaQrIiGatL31rlixy5kER21P4kf9N");
@@ -572,13 +600,21 @@ img {vertical-align: middle;}
   from {opacity: .4} 
   to {opacity: 1}}
 
-@media only screen and (max-width: 300px) {.prev, .next,.text {font-size: 11px} } 
+@media only screen and (max-width: 300px) {.prev, .next,.text {font-size: 11px} }
     
    </style>
   
 <!------------------------------------------------ SCRIPT START ------------------------------->
   <script>
-    var slideIndex = 1;
+function myFunction() {
+  var x = document.getElementById("Demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", ""); } }
+
+
+var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
