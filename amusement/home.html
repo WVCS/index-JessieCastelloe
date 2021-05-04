@@ -1,12 +1,62 @@
 <head>
   <link rel="stylesheet" href="amusementStyle.css">
   <link rel="icon" href="https://github.com/WVCS/index-JessieCastelloe/blob/main/Website%20logo.png?raw=true">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./css/ionicon.min.css">
   <title> Amusement </title>
+  <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
  </head>
 
 
 <html>
   <body>
+		<!-- Section: Header -->
+		<header class="header">
+			<div class="container">
+				<div class="wrapper">
+					<div class="header-item-left">
+            <img class="logo" src="https://github.com/WVCS/index-JessieCastelloe/blob/main/amusement/theme%20park%20logo.PNG?raw=true">
+					</div>
+					<!-- Section: Navbar Menu -->
+					<div class="header-item-center">
+						<div class="overlay"></div>
+						<nav class="menu">
+							<div class="menu-mobile-header">
+								<button type="button" class="menu-mobile-arrow"><i class="ion ion-ios-arrow-back"></i></button>
+								<div class="menu-mobile-title"></div>
+								<button type="button" class="menu-mobile-close"><i class="ion ion-ios-close"></i></button>
+							</div>
+							<ul class="menu-section">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Noun</a></li>
+								<li><a href="#">Convince</a></li>
+								<li><a href="#">Food</a></li>
+								<li><a href="#">Event</a></li>
+								<li><a href="#">Team</a></li>
+								<li><a href="#">Theme Park</a></li>
+							</ul> </nav>  </div>
+
+					<div class="header-item-right">
+						<button type="button" class="menu-mobile-trigger">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>	</div>	</div>
+		</header>
+
+		<!-- Section: Main -->
+		<main class="main">
+			<div class="container">	</div>
+		</main>
+
+
+		<script src="./js/script.js" defer></script>
+
     
     
     
@@ -18,18 +68,11 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   
     
     </body>
-  
+
+<!------------------------------------------------ STYLE START ------------------------------->
   <style>
     
     
@@ -41,9 +84,57 @@
     
     </style>
   
-  
+ <!------------------------------------------------ SCRIPT START ------------------------------->  
   <script>
-    
+const menu = document.querySelector('.menu');
+const menuSection = menu.querySelector('.menu-section');
+const menuArrow = menu.querySelector('.menu-mobile-arrow');
+const menuClosed = menu.querySelector('.menu-mobile-close');
+const menuTrigger = document.querySelector('.menu-mobile-trigger');
+const menuOverlay = document.querySelector('.overlay');
+let subMenu;
+
+menuSection.addEventListener('click', (e) => {
+   if (!menu.classList.contains('active')) {return;}
+   if (e.target.closest('.menu-item-has-children')) {
+      const hasChildren = e.target.closest('.menu-item-has-children');
+      showSubMenu(hasChildren);}  });
+
+menuArrow.addEventListener('click', () => {hideSubMenu();});
+
+menuTrigger.addEventListener('click', () => {toggleMenu();});
+
+menuClosed.addEventListener('click', () => {toggleMenu();});
+
+menuOverlay.addEventListener('click', () => {toggleMenu();});
+
+// Show & Hide Toggle Menu Function
+function toggleMenu() {
+   menu.classList.toggle('active');
+   menuOverlay.classList.toggle('active');}
+
+// Show the Mobile Side Menu Function
+function showSubMenu(hasChildren) {
+   subMenu = hasChildren.querySelector('.menu-subs');
+   subMenu.classList.add('active');
+   subMenu.style.animation = 'slideLeft 0.5s ease forwards';
+   const menuTitle = hasChildren.querySelector('i').parentNode.childNodes[0].textContent;
+   menu.querySelector('.menu-mobile-title').innerHTML = menuTitle;
+   menu.querySelector('.menu-mobile-header').classList.add('active');}
+
+// Hide the Mobile Side Menu Function
+function hideSubMenu() {
+   subMenu.style.animation = 'slideRight 0.5s ease forwards';
+   setTimeout(() => {
+      subMenu.classList.remove('active');}, 300);
+
+   menu.querySelector('.menu-mobile-title').innerHTML = '';
+   menu.querySelector('.menu-mobile-header').classList.remove('active');}
+
+// Windows Screen Resizes Function
+window.onresize = function () {
+   if (this.innerWidth > 991) {
+      if (menu.classList.contains('active')) {toggleMenu();} }  };
     
     </script>
   
