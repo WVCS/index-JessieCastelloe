@@ -16,5 +16,50 @@
 </div>
   
   
-  
+ <script>
+let ticket = document.querySelector('.ticket');
+
+let printer = document.querySelector('.printer');
+let elem = document.querySelector('h1');
+
+var bounds = (elem.getBoundingClientRect())
+
+var b = printer.getBoundingClientRect(); 
+console.log(b)
+
+var tl = gsap.timeline({delay: 1, });
+tl.to(ticket, {
+  y: '6em',
+  duration: 1,
+  ease: 'back'
+});
+tl.to(ticket, {
+  y: '12em',
+  duration: 1,
+  ease: 'back'
+});
+tl.to(ticket, {
+  y: '18em',
+  duration: 1,
+  ease: 'back'
+});
+tl.to(ticket, {
+  y: '24em',
+  duration: 1,
+  ease: 'back'
+});
+tl.to(ticket, {
+  y: '27.8em',
+  duration: 1,
+  ease: 'back'
+});
+tl.to("#bottom", {
+  x: '-85.8em',
+  duration: 1,
+  ease: 'back'
+});
+   
+   
+   
+   </script>
   </html>
