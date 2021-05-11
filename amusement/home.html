@@ -13,7 +13,7 @@
 
 <html>
   <body>
-	  		<!-- Section: Header -->
+<!-- Section: Header -->
 		<header class="header">
 			<div class="container">
 				<div class="wrapper">
@@ -27,18 +27,19 @@
 							<div class="menu-mobile-header">
 								<button type="button" class="menu-mobile-arrow"><i class="ion ion-ios-arrow-back"></i></button>
 								<div class="menu-mobile-title"></div>
-								<button type="button" class="menu-mobile-close"><i class="ion ion-ios-close"></i></button>
+								<button type="button" class="menu-mobile-close">x</button>
 							</div>
 							<ul class="menu-section">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">Noun</a></li>
-								<li><a href="#">Convince</a></li>
-								<li><a href="#">Food</a></li>
-								<li><a href="#">Event</a></li>
-								<li><a href="#">Team</a></li>
-								<li><a href="#">Theme Park</a></li>
+								<li><a href="https://wvcs.github.io/index-JessieCastelloe/">Home</a></li>
+								<li><a href="https://wvcs.github.io/index-JessieCastelloe/Noun.html">Noun</a></li>
+								<li><a href="https://wvcs.github.io/index-JessieCastelloe/convince/home.html">Convince</a></li>
+								<li><a href="https://wvcs.github.io/index-JessieCastelloe/food/home.html">Food</a></li>
+								<li><a href="https://wvcs.github.io/index-JessieCastelloe/event/home.html">Event</a></li>
+								<li><a href="https://wvcs.github.io/index-JessieCastelloe/team/home.html">Team</a></li>
+								<li><a href="https://wvcs.github.io/index-JessieCastelloe/amusement/home.html">Theme Park</a></li>
 							</ul>
-						</nav> </div>
+						</nav>
+					</div>
 
 					<div class="header-item-right">
 						<button type="button" class="menu-mobile-trigger">
@@ -46,10 +47,9 @@
 							<span></span>
 							<span></span>
 							<span></span>
-						</button>
-					</div> </div> </div>
-		</header>
-			<!-- Section: Main -->
+						</button> </div> </div> </div> </header>
+
+		<!-- Section: Main -->
 		<main class="main">
 			<div class="container">
 
@@ -111,13 +111,16 @@
 
 
 <!--TEXT-->
+<div class="button1">
+<button type="button1" onclick='document.getElementById("Change").innerHTML = "Rollercoasters" '>/\</button>
+
 <p id="Change" class="change"> Adventure Awaits!</p>
 
-<button type="button" onclick='document.getElementById("Change").innerHTML = "Rollercoasters and much more!" '>/\</button>
+<button type="button1" onclick='document.getElementById("Change").innerHTML = "Performances" '>\/</button></div>
 
 <!--SLIDESHOW-->
 
-<div class="container">
+<div class="container1">
   <div class="mySlides">
     <div class="numbertext">1 / 6</div>
     <img src="https://lizfalco.ca/wp-content/uploads/2020/09/rollercoaster0.png" style="width:100%">
@@ -169,10 +172,10 @@
       <img class="demo cursor" src="https://s3.india.com/wp-content/uploads/2020/07/roller.jpg" style="width:100%" onclick="currentSlide(4)">
     </div>
     <div class="column">
-      <img class="demo cursor" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2021%2F02%2F19%2FcGettyImages-1269729482-2000.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      <img class="demo cursor" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2021%2F02%2F19%2FcGettyImages-1269729482-2000.jpg" style="width:100%" onclick="currentSlide(5)">
     </div>    
     <div class="column">
-      <img class="demo cursor" src="https://sensourceinc.com/wp-content/uploads/2020/11/amusement-industry-expected-ride-wait-time.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      <img class="demo cursor" src="https://sensourceinc.com/wp-content/uploads/2020/11/amusement-industry-expected-ride-wait-time.jpg" style="width:100%" onclick="currentSlide(6)">
     </div>  </div> </div>
     
     
@@ -218,7 +221,8 @@
   width: min(1600px, 100%);
   margin: auto;
   position:relative;
-  margin-top: 40px;}
+  margin-top: 40px;
+  margin-bottom: 80px;}
 
 .pricing-card{
   flex: 1;
@@ -291,11 +295,15 @@
 
 img {vertical-align: middle;}
 
-.container {position: relative;}
+.container1 {position: relative;}
 
-.mySlides {display: none; margin-top: 80px; border: 7px solid #00AEE4;}
+.mySlides {display: none; border: 7px solid #00AEE4; width:80%; margin: 80px 10% 0 10%;}
+.row { width:80%; margin: 0 10% 0 10%;}
 
 .cursor {cursor: pointer;}
+
+.prev{margin-left:11%;}
+.next{margin-right:11%;}
 
 .prev,
 .next {
@@ -331,7 +339,9 @@ img {vertical-align: middle;}
   text-align: center;
   background-color: #222;
   padding: 2px 16px;
-  color: white;}
+  color: white;
+  width:80%;
+  margin: 0 10% 0 10%;}
 
 .row:after {
   content: "";
@@ -347,7 +357,7 @@ img {vertical-align: middle;}
 .active,
 .demo:hover {opacity: 1;}
 
-.change{margin-top: 80px;
+.change{
   font-size: 30pt;
   text-align:center;
   color:#00AEE4;
@@ -355,9 +365,20 @@ img {vertical-align: middle;}
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;}
 
-button {background-color: #00AEE4; color:white; padding 3px; border-radius: 8px; border: 2px solid #2b9af0; width:100%;}
-button:hover {background-color:white; box-shadow: 0 3px 10px 0 #0a235f; border: 0px; color:#00AEE4;}
-button:active{background-color: #5df09c; }
+.button1 button {background-color: #00AEE4;
+   background-image:linear-gradient(to bottom right, #00AEE4, #ffffff, #FBC366);
+  color:#0c68a7;
+  padding 3px; 
+  border-radius: 25px; 
+  border: 2px solid #ffffff; 
+  width:6%; 
+  margin: 0 47% 0 47%;}
+.button1 button:hover {padding 3px;
+  background-color:#00AEE4;
+  background-image:linear-gradient(to bottom right, #00AEE4, #00AEE4, #ffffff, #FBC366);
+  border: 2px solid #8AD9F4;
+  color:#0c68a7;}
+.button1 button:active{background-color: #5df09c; }
     
     
     </style>
