@@ -64,7 +64,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   overflow-x: hidden;
-  color: #121212;
+  color: #000000;
   background: #ffffff;}
 
 a,
@@ -194,7 +194,7 @@ video {
   line-height: 1.25;
   border: none;
   outline: none;
-  color: #121212;
+  color: #00AFE4;
   text-transform: capitalize;
   text-rendering: optimizeLegibility;
   -webkit-transition: color 0.3s ease-in-out;
@@ -213,7 +213,7 @@ video {
   opacity: 0;
   visibility: hidden;
   border-radius: 0.25rem;
-  border-top: 3px solid #e91e63;
+  border-top: 3px solid #E25845;
   background: #ffffff;
   -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
           box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -232,7 +232,7 @@ video {
   padding: 0.75rem 0;
   border: none;
   outline: none;
-  color: #121212;
+  color: #00AFE4;
   text-transform: capitalize;
   text-rendering: optimizeLegibility;
   -webkit-transition: all 0.3s ease-in-out;
@@ -262,7 +262,7 @@ video {
   padding: 0.5rem 0;
   border: none;
   outline: none;
-  color: #121212;
+  color: #00AFE4;
   text-transform: capitalize;
   text-rendering: optimizeLegibility;
   -webkit-transition: color 0.3s ease-in-out;
@@ -293,7 +293,7 @@ video {
   padding: 0.75rem 0;
   border: none;
   outline: none;
-  color: #e91e63;
+  color: #E25845;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
   -webkit-transition: all 0.3s ease-in-out;
@@ -312,10 +312,10 @@ video {
   vertical-align: middle;}
 
 .header .menu > ul > li .menu-subs.menu-mega > .list-item > ul > li > a:hover,
-.header .menu > ul > li .menu-subs > ul > li > a:hover {color: #e91e63;}
+.header .menu > ul > li .menu-subs > ul > li > a:hover {color: #FBC366;}
 
 .header-item-right a:hover,
-.header .menu > ul > li:hover > a {color: #e91e63;}
+.header .menu > ul > li:hover > a {color: #FBC366;}
 
 @media only screen and (min-width: 993px) {
   .header .menu > ul > li.menu-item-has-children:hover .menu-subs {
@@ -550,7 +550,3 @@ video {
   min-height: 100vh;}
 
 .logo {width: 100px;}
-
-
-
-
