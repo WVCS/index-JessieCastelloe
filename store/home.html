@@ -10,7 +10,54 @@
 <html>
   
   <body>
-  
+  <section class="navbar">
+  <img src="https://github.com/WVCS/index-JessieCastelloe/blob/main/store/IMG_0021.PNG?raw=true" class="logo">
+  <ul class="nav-links">
+    <li><a>Link1</a></li>
+    <li><a>Link2</a></li>
+    <li><a>Link3</a></li>
+  </ul>
+  <div class="nav-toggle" id="hamburger">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+</section>
+<section class="cart-content">
+  <div class="cart-detail">
+    <div id="cart-item-container">
+      <div class="cart-item">
+        <a class="cart-item-image">
+          <img src="http://placehold.it/75x75">
+        </a>
+        <div class="cart-item-detail">
+          <a class="cart-item-name">Great Item</a>
+          <span class="qty">Qty#</span>
+          <input type="number" class="cart-item-quantity" value="1">
+          <div class="close-btn">&times;</div>
+        </div>
+      </div>
+      <div class="cart-item">
+        <a class="cart-item-image">
+          <img src="http://placehold.it/75x75">
+        </a>
+        <div class="cart-item-detail">
+          <a class="cart-item-name">Great Item</a>
+          <span class="qty">Qty#</span>
+          <input type="number" class="cart-item-quantity" value="1">
+          <div class="close-btn">&times;</div>
+        </div>
+      </div>
+    </div>
+    <a class="checkout">Checkout</a>
+  </div>
+  <div class="cart-tab">
+    <div class="down-arrow n-sel"></div>
+    <div class="cart n-sel"></div>
+    <div id="cart-total" class="n-sel">2</div>
+  </div>
+</section>
+
   
   
   
@@ -39,6 +86,45 @@
      <!--------------------------------------- SCRIPT START ----------------------------------------> 
   
   <script>
+   document.addEventListener("DOMContentLoaded", function(event) { 
+  var cartContent = document.getElementsByClassName("cart-content")[0];
+  var cartTab = document.getElementsByClassName("cart-tab")[0];
+  var cartDet = document.getElementsByClassName("cart-detail")[0];
+  
+  var inTab = false;
+  var inDet = false;
+  
+  cartTab.onclick = function() {
+    cartContent.classList.toggle("cart-open");
+    cartContent.classList.remove("cart-partial-open");
+    inTab = false;
+    inDet = false; };
+  cartTab.onmouseover = function () {
+    if (!cartContent.classList.contains("cart-open")) {
+      cartContent.classList.add("cart-partial-open");
+      inTab = true; } };
+  cartTab.onmouseout = function () {
+    inTab = false;
+    CheckCloseCart(); }
+  cartDet.onmouseover = function () {
+    if (!cartContent.classList.contains("cart-open")) { inDet = true; } }
+  cartDet.onmouseout = function () {
+    inDet = false;
+    CheckCloseCart(); }
+  
+  function CheckCloseCart () {
+    setTimeout(function() {
+      if (!inTab && !inDet) {
+        cartContent.classList.remove("cart-partial-open"); } }, 100);}
+  
+  var hamburger = document.getElementById("hamburger");
+  var navLinks = document.getElementsByClassName("nav-links")[0];
+  
+  hamburger.onclick = function() {
+    navLinks.classList.toggle("open");
+    hamburger.classList.toggle("is-active"); }; });
+    
+    
     
     
     </script>
