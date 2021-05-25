@@ -3,15 +3,6 @@ html {
   margin: 0;
   padding: 0;}
 
-body {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-color: #fff;
-  background-size: 600px 600px;
-  background-position: 100% 0;
-  background-repeat: no-repeat;
-  box-sizing: border-box;}
 
 .cart-tab {
   display: inline-block;
@@ -85,8 +76,8 @@ body {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   background: rgba(240, 245, 245, .7);
-  -webkit-transition: max-height .5s ease, margin .5s ease .5s;
-  transition: max-height .5s ease, margin .5s ease 4s;
+  -webkit-transition: max-height 1s ease, margin 1s ease 1s;
+  transition: max-height 1s ease, margin 1s ease 4s;
   box-sizing: border-box;}
 .cart-partial-open .cart-detail {
   max-height: 40px;
@@ -131,7 +122,7 @@ body {
   padding: 5px;
   width: 195px;
   width: calc(100% - 75px);
-  height: 75px;
+  height: 50px;
   float: left;
   box-sizing: border-box;}
 .cart-item-name {
@@ -169,7 +160,7 @@ body {
   font-size: 22px;
   line-height: 40px;
   padding: 0 15px;
-  border-top: 1px solid #222;
+  border-top: 1px solid #008BFF;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   color: #fff;
@@ -351,4 +342,3 @@ Shop Section
 @media only screen and (max-width:1200px) {}
 
 @media only screen and (max-width:680px) {}
-
