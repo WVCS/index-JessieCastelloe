@@ -33,13 +33,14 @@
  <body>
    <br/><br/><br/>
    <div class="headerimage"></div> 
-  <h1 style="margin:90px 10% 10px 10%"> Horses  </h1> 
-  <p class="description" style="margin:10px 10% 40px 10%">
+ 
+    <div class="wrapper">
+   <div class="box a"> <h1 style="margin:0px 10% 0px 10%"> Horses  </h1> </div>
+   <div class="box b"> <p class="description" style="margin:10px 10% 40px 10%">
    The horse (Equus ferus caballus) has lived on Earth for over 50 million years. The domestication of horses began around 4000 BC. There are several populations of horses living in the wild, and some are domesticated. These domesticated populations are known as feral horses. Female horses are known as mares, while the male horses are called geldings, if they are casterated, or stallions. Foals reach adulthood at around 5 years of age and from there, live up to 25 to 30 in human years.
-    </p>
-  
- <h3> List of a few horse breeds </h3> 
- <table>
+    </p> </div>
+   <div class="box c"> <h3> List of a few horse breeds </h3> </div>
+   <div class="box d"> <table>
   <tr> 
    <th> Images </th> 
    <th> Breeds </th>
@@ -107,20 +108,67 @@
    </td>
    <td> 4.8 - 5.1 ft.</td>
   </tr> 
-</table>
-  
- <br/><br/>
-<div class="container">
-    <div class="fling-minislide" style="margin:30px 10% 40px 10%">
-   <img src="https://www.dilutesaustralia.net/images/archi.jpg" alt="Slide 7" />
-   <img src="https://i.pinimg.com/originals/fb/c6/9b/fbc69b1a0d7b6d4b978a25e51f89dd96.jpg" alt="Slide 6" />
-   <img src="https://i.pinimg.com/originals/62/96/ca/6296caaf6c2954881bd4bfd71e7cf998.jpg" alt="Slide 5" />
-   <img src="https://cdn.hipwallpaper.com/i/54/24/UByAEX.jpg" alt="Slide 4" />
-   <img src="https://i.pinimg.com/originals/60/0d/50/600d500ee8e3040602cdcede75a01abd.jpg" alt="Slide 3" />
-   <img src="http://requiemstate.weebly.com/uploads/6/9/9/2/6992896/105962250.jpg?1303021917" alt="Slide 2" />
-   <img src="https://i.pinimg.com/originals/6b/63/28/6b63286d90e57071abd5a97212385ef5.jpg" alt="Slide 1" /> 
-    </div>
+</table> </div>
+   <div class="box e"> <h3> Horse Coat Colorations </h3> </div>
+   <div class="box f"> <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="https://www.dilutesaustralia.net/images/archi.jpg" style="width:100%">
+  <div class="text">Chestnut</div>
 </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="https://i.pinimg.com/originals/fb/c6/9b/fbc69b1a0d7b6d4b978a25e51f89dd96.jpg" style="width:100%">
+  <div class="text">Dun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="https://i.pinimg.com/originals/62/96/ca/6296caaf6c2954881bd4bfd71e7cf998.jpg" style="width:100%">
+  <div class="text">Black</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="https://cdn.hipwallpaper.com/i/54/24/UByAEX.jpg" style="width:100%">
+  <div class="text">Bay</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="https://i.pinimg.com/originals/60/0d/50/600d500ee8e3040602cdcede75a01abd.jpg" style="width:100%">
+  <div class="text">Gray</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="http://requiemstate.weebly.com/uploads/6/9/9/2/6992896/105962250.jpg?1303021917" style="width:100%">
+  <div class="text">Roan (Blue)</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <img src="https://i.pinimg.com/originals/6b/63/28/6b63286d90e57071abd5a97212385ef5.jpg" style="width:100%">
+  <div class="text">Palomino</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>         <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+</div> </div>
+    </div>
  
     
   
@@ -174,32 +222,153 @@ h4 {font-family: antic;}
 .slideshowdescription{font-family:antic;}
 body {background: #ebeaed;}
 
-/* Slideshow text */
-.container {position: relative;}
-.container::after {
-  content: "Horse coat colors in order: chestnut, dun, black, bay, gray, roan (blue), and palomino.";
-  font-size:16pt;
-  font-family:antic;
-  display: block;
+
+.wrapper {
+    margin-top:100px;
+    display: grid;
+    grid-gap: 5px;
+    background-color: transparent;}
+
+  .box {
+    background-color: transparent;
+    padding: 20px;}
+
+  .a {grid-column: 1 / 10;
+      grid-row: 1 ;}
+  .b {grid-column: 1/10 ;
+      grid-row: 2 ;}
+  .c {grid-column: 1/10 ;
+      grid-row: 3 ;
+      margin-bottom:-10px;}
+  .d {grid-column: 1/10;
+      grid-row: 4 ; }
+  .e {grid-column: 1/10;
+      grid-row: 5 ;
+      margin-bottom: -10px;
+      margin-top: 10px;}
+  .f {grid-column: 1/10;
+      grid-row: 6 ;
+      margin:10%;
+      margin-top:0;}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
   position: absolute;
-  top: 0;
-  margin-left: 43%;
-  height: 55%;
-  width: 48%;
-  background:#ebeaed}
-/* ------ Slideshow ------*/
-.fling-minislide {width:30%; height:300px; overflow:hidden; position:relative;}
-.fling-minislide img{ position:absolute; animation:fling-minislide 30s infinite; opacity:0; width: 100%; height: auto;}
-@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
-.fling-minislide img:nth-child(7){animation-delay:0s;}
-.fling-minislide img:nth-child(6){animation-delay:4s;}
-.fling-minislide img:nth-child(5){animation-delay:8s;}
-.fling-minislide img:nth-child(4){animation-delay:12s;}
-.fling-minislide img:nth-child(3){animation-delay:16s;}
-.fling-minislide img:nth-child(2){animation-delay:20s;}
-.fling-minislide img:nth-child(1){animation-delay:24s;}
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {background-color: rgba(0,0,0,0.8);}
+
+/* Caption text */
+.text {background-color:rgba(0,0,0,0.55);
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight:bold;
+  font-family:antic;}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;}
+
+.active2, .dot:hover {background-color: #79a8d1;}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {.prev, .next,.text {font-size: 11px} }
   
 </style>
 
+  <script>
+    
+   var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active2", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active2";
+} 
+    
+    
+    
+    </script>
 
 </html
